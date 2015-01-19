@@ -4,7 +4,6 @@ class Peep
 
   property :id, Serial
   property :owner, String
-  property :url, String
   property :message, String
-
+  has n, :tags, :through => Resource
 end
